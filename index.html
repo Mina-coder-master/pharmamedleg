@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Эм судлал · 50 асуулт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Manrope:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="sun"></div><span class="seal stamp">50</span>
+        <div class="wrap">
+            <p class="kicker">ШАЛГАЛТЫН БЭЛТГЭЛ</p>
+            <h1>Эм<em>судлал</em></h1>
+            <p class="sub">Асуулт бүр хариутайгаа. Нээж унш, мэдсэнээ тэмдэглэ, дараа нь өөрийгөө шалга.</p>
+            <div class="bar"><i id="pb"></i></div>
+            <div id="pt"></div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="wrap navin"><a href="#home" data-v="home">Нүүр</a><a href="#spin" data-v="spin">Эргүүлэх</a></div>
+    </nav>
+    <section id="vHome">
+        <div class="tools">
+            <div class="wrap">
+                <div class="row"><input id="s" type="search" placeholder="Асуулт, түлхүүр үг хайх…"
+                        aria-label="Хайх"><button id="all">Бүгдийг нээх</button><button class="pri" id="go">Шалгах горим
+                        ▶</button></div>
+                <div class="chips" id="chips"></div>
+            </div>
+        </div>
+        <div class="wrap">
+            <main id="list"></main>
+        </div>
+    </section>
+    <section id="vSpin" hidden>
+        <div class="wrap spinwrap">
+            <p class="mut">Дугуйг эргүүл. Сум заасан асуултад хариул.</p>
+            <div class="wheelbox">
+                <div class="ptr"></div><canvas id="wh" width="600" height="600"></canvas><button class="hub"
+                    id="spinbtn">ЭРГҮҮЛ</button>
+            </div>
+            <div id="res"></div>
+        </div>
+    </section>
+    <footer>Эм судлалын 50 асуултын материалаас бэлтгэв</footer>
+    <section id="drill">
+        <div class="dbox">
+            <div id="dB"></div>
+            <p style="margin:18px 0 0"><button id="dx">✕ Гарах</button></p>
+        </div>
+    </section>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
